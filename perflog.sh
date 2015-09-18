@@ -1,9 +1,9 @@
 #!/bin/ksh
-#0 0 * * * /opt/local/bin/perflog.sh 6 240 /perfdata 1>/dev/null 2>/dev/null
+#0 0 * * * /usr/local/perf/perflog.sh 6 240 /perfdata 1>/dev/null 2>/dev/null
 #
 # this file collects performance data on a daily basis
 #
-BINPATH=/root/perf
+BINPATH=/usr/local/perf
 
 if [ $# -ne 3 ]
 then
